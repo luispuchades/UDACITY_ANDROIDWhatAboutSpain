@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.whataboutspain.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/top_banner" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/quiz_answered_questions"
+                style="@style/style_answered_questions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answered_questions" />
+
+            <TextView
+                android:id="@+id/quiz_answered_questions_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_answered_questions_number"
+                android:text="@string/answered_questions_number" />
+
+            <TextView
+                android:id="@+id/quiz_answered_questions_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_answered_questions_total"
+                android:text="@string/answered_questions_total" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/quiz_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/topic_architecture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic_architecture"
+                    style="@style/style_topic" />
+
+                <ImageView
+                    android:id="@+id/quiz_image1"
+                    style="@style/quizImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/udacityquiz1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_architecture"
+                    style="@style/question_title"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_button_Q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    style="@style/radio_cities">
+
+                    <RadioButton
+                        android:id="@+id/radio11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/barcelona"
+                        style="@style/citi_barcelona" />
+
+                    <RadioButton
+                        android:id="@+id/radio12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/madrid"
+                        style="@style/citi_madrid"/>
+
+                    <RadioButton
+                        android:id="@+id/radio13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/valencia"
+                        style="@style/citi_valencia"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extra_bonus"
+                    style="@style/extra_bonus"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bonus_architecture"
+                        style="@style/bonus_question" />
+
+                    <EditText
+                        android:id="@+id/bonus1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/extra_bonus_input"
+                        android:inputType="textCapWords"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scroll_down_next"
+                    style="@style/scroll_down_next"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/topic_nature_environment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic_nature_environment"
+                    style="@style/style_topic" />
+
+                <ImageView
+                    android:id="@+id/quiz_image2"
+                    style="@style/quizImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/udacityquiz2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_nature_environment"
+                    style="@style/question_title"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_button_Q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    style="@style/radio_cities">
+
+                    <RadioButton
+                        android:id="@+id/radio21"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/barcelona"
+                        style="@style/citi_barcelona" />
+
+                    <RadioButton
+                        android:id="@+id/radio22"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/madrid"
+                        style="@style/citi_madrid"/>
+
+                    <RadioButton
+                        android:id="@+id/radio23"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/valencia"
+                        style="@style/citi_valencia"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extra_bonus"
+                    style="@style/extra_bonus"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bonus_nature_environment"
+                        style="@style/bonus_question" />
+
+                    <EditText
+                            android:id="@+id/bonus2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/extra_bonus_input"
+                            android:inputType="textCapWords"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/scroll_down_next"
+                    style="@style/scroll_down_next"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/topic_urban_environment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic_urban_environment"
+                    style="@style/style_topic" />
+
+                <ImageView
+                    android:id="@+id/quiz_image3"
+                    style="@style/quizImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/udacityquiz3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_urban_environment"
+                    style="@style/question_title"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_button_Q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    style="@style/radio_cities">
+
+                    <RadioButton
+                        android:id="@+id/radio31"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/barcelona"
+                        style="@style/citi_barcelona" />
+
+                    <RadioButton
+                        android:id="@+id/radio32"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/madrid"
+                        style="@style/citi_madrid"/>
+
+                    <RadioButton
+                        android:id="@+id/radio33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/valencia"
+                        style="@style/citi_valencia"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extra_bonus"
+                    style="@style/extra_bonus"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bonus_urban_environment"
+                        style="@style/bonus_question" />
+
+                    <EditText
+                        android:id="@+id/bonus3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/extra_bonus_input"
+                        android:inputType="textCapWords"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/scroll_down_next"
+                    style="@style/scroll_down_next"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/topic_gastronomy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic_gastronomy"
+                    style="@style/style_topic" />
+
+                <ImageView
+                    android:id="@+id/quiz_image4"
+                    style="@style/quizImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/udacityquiz4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_gastronomy"
+                    style="@style/question_title"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_button_Q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    style="@style/radio_cities">
+
+                    <RadioButton
+                        android:id="@+id/radio41"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/barcelona"
+                        style="@style/citi_barcelona" />
+
+                    <RadioButton
+                        android:id="@+id/radio42"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/madrid"
+                        style="@style/citi_madrid"/>
+
+                    <RadioButton
+                        android:id="@+id/radio43"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/valencia"
+                        style="@style/citi_valencia"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extra_bonus"
+                    style="@style/extra_bonus"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bonus_gastronomy"
+                        style="@style/bonus_question" />
+
+                    <EditText
+                        android:id="@+id/bonus4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/extra_bonus_input"
+                        android:inputType="textCapWords"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/scroll_down_next"
+                    style="@style/scroll_down_next"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/topic_vacations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topic_vacations"
+                    style="@style/style_topic" />
+
+                <ImageView
+                    android:id="@+id/quiz_image5"
+                    style="@style/quizImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/udacityquiz5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_vacations"
+                    style="@style/question_title"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    style="@style/radio_cities">
+
+                    <CheckBox
+                        android:id="@+id/radio51"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/barcelona"
+                        style="@style/citi_barcelona" />
+
+                    <CheckBox
+                        android:id="@+id/radio52"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/madrid"
+                        style="@style/citi_madrid"/>
+
+                    <CheckBox
+                        android:id="@+id/radio53"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/valencia"
+                        style="@style/citi_valencia"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extra_bonus"
+                    style="@style/extra_bonus"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bonus_vacations"
+                        style="@style/bonus_question" />
+
+                    <EditText
+                        android:id="@+id/bonus5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/extra_bonus_input"
+                        android:inputType="textCapWords"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_quiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/submit_quiz"
+                    style="@style/submit_quiz"
+                    android:onClick="submitQuiz"/>
+
+                <Button
+                    android:id="@+id/retake_quiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/retake_quiz"
+                    style="@style/retake_quiz"
+                    android:onClick="retakeQuiz"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

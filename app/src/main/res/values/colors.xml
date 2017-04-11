@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main color: Adobe Kuler
+        RGB 00 34 64
+        HEX #002240
+
+        Original Colors:
+        colorPrimary: #3F51B5
+        colorPrimaryDark: #303F9F
+        colorAccent: #ff4081
+    -->
+    <color name="colorPrimary">#002240</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#00018C</color>
+
+    <!--Banner Colors
+        Background: lightblue
+        Text: black -->
+    <color name="colorBannerBackground">#0060D9</color>
+    <color name="colorBannerText">#FFFFFF</color>
+
+
+    <!-- Quiz Topic Colors-->
+    <color name="colorTopicBackground">#0087FF</color>
+    <color name="colorTopicText">#FFFFFF</color>
+
+    <!--Question Titles Colors-->
+    <color name="colorQuestionTitleBackground">#FFFFFF</color>
+    <color name="colorQuestionTitleText">#002240</color>
+
+    <!--Answers Banner-->
+    <color name="colorCityBackground">#FFFFFF</color>
+    <color name="colorCityText">#002240</color>
+
+    <!--Color for Bonus Question-->
+    <color name="colorExtraBonusBackground">#0087FF</color>
+    <color name="colorExtraBonusText">#FFFFFF</color>
+
+    <color name="colorBonusBackground">#FFFFFF</color>
+    <color name="colorBonusText">#002240</color>
+
+    <!--Color for Submit Quiz-->
+    <color name="colorSubmitQuizBackground">#00FF00</color>
+    <color name="colorSubmitQuizText">#002240</color>
+
+    <!--Color for Retake Quiz-->
+    <color name="colorRetakeQuizBackground">#FFFF00</color>
+    <color name="colorRetakeQuizText">#002240</color>
+</resources>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">WhatAboutSpain</string>
+
+    <!--Strings for permanent Top Banner-->
+    <string name="answered_questions">Quiz Answered Questions:</string>
+    <string name="answered_questions_number">0</string>
+    <string name="answered_questions_total">/5</string>
+
+    <!--Strings for Quiz Topics -->
+    <string name="topic_architecture">Architecture</string>
+    <string name="topic_nature_environment">Nature environment</string>
+    <string name="topic_urban_environment">Urban environment</string>
+    <string name="topic_gastronomy">Gastronomy</string>
+    <string name="topic_vacations">Vacations</string>
+
+
+    <!--Strings for Question Titles-->
+    <string name="question_architecture">This building is called \"The Science Museum\" and it belongs to the city of:</string>
+    <string name="question_nature_environment">Which of the following cities is near of the biggest spanish lake in which you can enjoy also the sunset?</string>
+    <string name="question_urban_environment">Which of the following cities has the longest urban park of Spain with 9 km long?</string>
+    <string name="question_gastronomy">This famous meal is original from one of the following cities. Do you know which one?</string>
+    <string name="question_vacations">In which two of the following cities can you enjoy your holidays in their beautiful beaches?</string>
+
+
+    <!--Strings for Cities Answers-->
+    <string name="barcelona">Barcelona</string>
+    <string name="madrid">Madrid</string>
+    <string name="valencia">Valencia</string>
+
+    <!--Strings for Question Bonus-->
+    <string name="extra_bonus">Extra Bonus</string>
+    <string name="bonus_architecture">Name of the architect:</string>
+    <string name="bonus_nature_environment">Name of the lake:</string>
+    <string name="bonus_urban_environment">Do you know the name of this park?</string>
+    <string name="bonus_gastronomy">Do you know the name of this famous meal?</string>
+    <string name="bonus_vacations">Could you tell the name of their sea?</string>
+
+    <!--String for Scroll Down-->
+    <string name="scroll_down_next">scroll down for next question</string>
+
+    <!--String for Submit Quiz-->
+    <string name="submit_quiz">SUBMIT QUIZ</string>
+    <string name="retake_quiz">RETAKE QUIZ</string>
+</resources>

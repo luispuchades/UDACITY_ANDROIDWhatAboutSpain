@@ -1,0 +1,161 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Style for upper banner accounting number of questions answered-->
+    <style name="top_banner">
+        <item name="android:background">@color/colorBannerBackground</item>
+        <item name="android:textColor">@color/colorBannerText</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="style_answered_questions">
+        <item name="android:background">@color/colorBannerBackground</item>
+        <item name="android:textColor">@color/colorBannerText</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <style name="style_answered_questions_number">
+        <item name="android:background">@color/colorBannerBackground</item>
+        <item name="android:textColor">@color/colorBannerText</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_toLeftOf">@id/quiz_answered_questions_total</item>
+    </style>
+
+    <style name="style_answered_questions_total">
+        <item name="android:background">@color/colorBannerBackground</item>
+        <item name="android:textColor">@color/colorBannerText</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">16sp</item>
+    </style>
+
+
+    <!--Style for Quiz Topics Tittles-->
+    <style name="style_topic">
+        <item name="android:background">@color/colorTopicBackground</item>
+        <item name="android:textColor">@color/colorTopicText</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Style for main images previous to the questions-->
+    <style name="quizImage">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--Style for Question Titles-->
+    <style name="question_title">
+        <item name="android:background">@color/colorQuestionTitleBackground</item>
+        <item name="android:textColor">@color/colorQuestionTitleText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+
+    <!--Style for Radio Buttons - Cities-->
+    <style name="radio_cities">
+        <item name="android:background">@color/colorCityBackground</item>
+        <item name="android:textColor">@color/colorCityText</item>
+    </style>
+
+    <style name="citi_barcelona">
+        <item name="android:layout_marginLeft">16dp</item>
+
+    </style>
+
+    <style name="citi_madrid">
+        <item name="android:layout_marginLeft">24dp</item>
+    </style>
+
+    <style name="citi_valencia">
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+
+    <!--Style for Bonus Question-->
+    <style name="extra_bonus">
+        <item name="android:background">@color/colorExtraBonusBackground</item>
+        <item name="android:textColor">@color/colorExtraBonusText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bonus_question">
+        <item name="android:background">@color/colorBonusBackground</item>
+        <item name="android:textColor">@color/colorBonusText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!--Style for Extra Bonus EditText-->
+    <style name="extra_bonus_input">
+        <item name="android:hint">Guess it!</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!--Style for Scroll Next Question-->
+    <style name="scroll_down_next">
+        <item name="android:background">@color/colorBannerBackground</item>
+        <item name="android:textColor">@color/colorBannerText</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!--Style for Submit Quiz-->
+    <style name="submit_quiz">
+        <item name="android:background">@color/colorSubmitQuizBackground</item>
+        <item name="android:textColor">@color/colorSubmitQuizText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!--Style for Retake Quiz-->
+    <style name="retake_quiz">
+        <item name="android:background">@color/colorRetakeQuizBackground</item>
+        <item name="android:textColor">@color/colorRetakeQuizText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>
