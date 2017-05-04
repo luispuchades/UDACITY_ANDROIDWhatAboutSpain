@@ -13,14 +13,12 @@
     <string name="topic_gastronomy">Gastronomy</string>
     <string name="topic_vacations">Vacations</string>
 
-
     <!--Strings for Question Titles-->
     <string name="question_architecture">This building is called \"The Science Museum\" and it belongs to the city of:</string>
     <string name="question_nature_environment">Which of the following cities is near of the biggest spanish lake in which you can enjoy also the sunset?</string>
     <string name="question_urban_environment">Which of the following cities has the longest urban park of Spain with 9 km long?</string>
     <string name="question_gastronomy">This famous meal is original from one of the following cities. Do you know which one?</string>
     <string name="question_vacations">In which two of the following cities can you enjoy your holidays in their beautiful beaches?</string>
-
 
     <!--Strings for Cities Answers-->
     <string name="barcelona">Barcelona</string>

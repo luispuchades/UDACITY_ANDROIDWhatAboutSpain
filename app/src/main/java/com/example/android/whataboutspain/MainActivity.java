@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
     int answeredQuestions;
     int answeredBonusQuestions;
 
-
-
     //Question1 (Q1)
     boolean questionSelected11;
     boolean questionSelected12;
@@ -68,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
     boolean questionSelected53;
     String answerQ5;
     EditText textQuestion5;
-
 
     //2. Definition of methods and functions
 
@@ -122,7 +119,6 @@ public class MainActivity extends AppCompatActivity {
         answeredQuestionsBanner.setText("" + number);
     }
 
-
     private String createFinalMessage(int score, int scoreBonus, int answeredQuestions, int answeredBonusQuestions) {
         String finalMessage;
         int finalScore;
@@ -150,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
         finalMessage += "\n" + "Correct Questions: 3 points.";
         finalMessage += "\n" + "Answered Bonus Questions: 2 points.";
         finalMessage += "\n" + "Correct Bonus Questions: 5 points.";
-
 
         return finalMessage;
     }
@@ -182,7 +177,6 @@ public class MainActivity extends AppCompatActivity {
         answeredQuestions = 0;
         answeredBonusQuestions = 0;
 
-
         //Question1(Q1): Detection of Radio Button pushed
         RadioButton buttonRadio11 = (RadioButton) findViewById(R.id.radio11);
         questionSelected11 = buttonRadio11.isChecked();
@@ -200,7 +194,6 @@ public class MainActivity extends AppCompatActivity {
         //Question1: Check right answer
         checkAnswer(questionSelected11, questionSelected12, questionSelected13);
         checkAnswerBonus(answerQ1, "Calatrava");
-
 
         //Question2(Q2): Detection of Radio Button pushed
         RadioButton buttonRadio21 = (RadioButton) findViewById(R.id.radio21);
@@ -220,7 +213,6 @@ public class MainActivity extends AppCompatActivity {
         checkAnswer(questionSelected21, questionSelected22, questionSelected23);
         checkAnswerBonus(answerQ2, "Albufera");
 
-
         //Question3(Q3): Detection of Radio Button pushed
         RadioButton buttonRadio31 = (RadioButton) findViewById(R.id.radio31);
         questionSelected31 = buttonRadio31.isChecked();
@@ -239,7 +231,6 @@ public class MainActivity extends AppCompatActivity {
         checkAnswer(questionSelected31, questionSelected32, questionSelected33);
         checkAnswerBonus(answerQ3, "Turia");
 
-
         //Question4(Q4): Detection of Radio Button pushed
         RadioButton buttonRadio41 = (RadioButton) findViewById(R.id.radio41);
         questionSelected41 = buttonRadio41.isChecked();
@@ -257,7 +248,6 @@ public class MainActivity extends AppCompatActivity {
         //Question4: Check right answer
         checkAnswer(questionSelected41, questionSelected42, questionSelected43);
         checkAnswerBonus(answerQ4, "Paella");
-
 
         //Question5(Q5): Detection of Radio Button pushed
         buttonRadio51 = (CheckBox) findViewById(R.id.radio51);
@@ -280,10 +270,8 @@ public class MainActivity extends AppCompatActivity {
         //Update answered questions
         updateAnsweredQuestions(answeredQuestions);
 
-
         //String creation for showing score of quiz results
         String finalMessage = createFinalMessage(score, scoreBonus, answeredQuestions, answeredBonusQuestions);
-
 
         //Convert Button "SUBMIT QUIZ" to "RETAKE QUIZ"
         Button finalSubmitQuiz = (Button) findViewById(R.id.submit_quiz);
@@ -295,7 +283,6 @@ public class MainActivity extends AppCompatActivity {
         //Show results in a toast message
         showScore(finalMessage);
     }
-
 
     //Retake Quiz is the event to restart the quizz
     public void retakeQuiz(View view) {
@@ -325,12 +312,10 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioButtonQ4 = (RadioGroup) findViewById(R.id.radio_button_Q4);
         radioButtonQ4.clearCheck();
 
-
         //UNCHECK CHECKBOXES
         uncheckCheckboxes(buttonRadio51);
         uncheckCheckboxes(buttonRadio52);
         uncheckCheckboxes(buttonRadio53);
-
 
         //UNCHECK EDITEXTS
         textQuestion1.getText().clear();
@@ -338,7 +323,6 @@ public class MainActivity extends AppCompatActivity {
         textQuestion3.getText().clear();
         textQuestion4.getText().clear();
         textQuestion5.getText().clear();
-
 
         //Convert Button "RETAKE QUIZ" to "SUBMIT QUIZ"
         Button finalRetakeQuiz = (Button) findViewById(R.id.retake_quiz);
